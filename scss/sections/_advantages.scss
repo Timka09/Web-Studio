@@ -1,0 +1,53 @@
+.advantages {
+    padding-top: 94px;
+}
+
+.advantages-item {
+    margin-left: 30px;
+}
+
+.advantages-item:first-child:before {
+    margin-bottom: 30px;
+    content: "" url(../photo/Satellite.webp);
+    display: block;
+}
+
+.advantages-item:nth-child(2):before {
+    margin-bottom: 30px;
+    content: "" url(../photo/Clock.webp);
+    display: block;
+}
+
+.advantages-item:nth-child(3):before {
+    margin-bottom: 30px;
+    content: "" url(../photo/Computer.webp);
+    display: block;
+}
+
+.advantages-item:nth-child(4):before {
+    margin-bottom: 30px;
+    content: "" url(../photo/SpaceMan.webp);
+    display: block;
+}
+
+.advantages-name {
+    margin-bottom: 10px;
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.advantages-article {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    /* 171.429% */
+    letter-spacing: 0.42px;
+}
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+}
