@@ -11,7 +11,7 @@
 
 .clients-item:nth-child(1) {
   border-radius: 4px;
-  border: 1px solid var(--icons-color);
+  border: 1px solid $icons-color;
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-name: growing-box;
@@ -20,7 +20,7 @@
 }
 .clients-item:nth-child(2) {
   border-radius: 4px;
-  border: 1px solid var(--icons-color);
+  border: 1px solid $icons-color;
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-name: growing-box;
@@ -30,7 +30,7 @@
 }
 .clients-item:nth-child(3) {
   border-radius: 4px;
-  border: 1px solid var(--icons-color);
+  border: 1px solid $icons-color;
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-name: growing-box;
@@ -40,7 +40,7 @@
 }
 .clients-item:nth-child(4) {
   border-radius: 4px;
-  border: 1px solid var(--icons-color);
+  border: 1px solid $icons-color;
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-name: growing-box;
@@ -50,7 +50,7 @@
 }
 .clients-item:nth-child(5) {
   border-radius: 4px;
-  border: 1px solid var(--icons-color);
+  border: 1px solid $icons-color;
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-name: growing-box;
@@ -60,7 +60,7 @@
 }
 .clients-item:nth-child(6) {
   border-radius: 4px;
-  border: 1px solid var(--icons-color);
+  border: 1px solid $icons-color;
   padding: 16px 32px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   animation-name: growing-box;
@@ -71,21 +71,21 @@
 
 .clients-item {
     border-radius: 4px;
-    border: 1px solid var(--icons-color);
+    border: 1px solid $icons-color;
     padding: 16px 32px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:hover>.clients-icons {
-    fill: var(--logo-color);
+    fill: $logo-color;
 }
 
 .clients-item:hover {
-    border: 1px solid var(--logo-color);
+    border: 1px solid $logo-color;
 }
 
 .clients-title {
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -95,7 +95,7 @@
 }
 
 .clients-icons {
-    fill: var(--icons-color);
+    fill: $icons-color;
     width: 106px;
     height: 60px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

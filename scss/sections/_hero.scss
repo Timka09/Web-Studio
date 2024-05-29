@@ -13,7 +13,7 @@
 
 .hero-text {
     margin-bottom: 30px;
-    color: var(--article-color);
+    color: $article-color;
     text-align: center;
     font-size: 44px;
     font-weight: 900;
@@ -28,7 +28,7 @@
 .hero-button {
     border: none;
     padding: 10px 32px;
-    color: var(--article-color);
+    color: $article-color;
     cursor: pointer;
     border-radius: 4px;
     text-align: center;
@@ -37,7 +37,7 @@
     line-height: 1.8;
     /* 187.5% */
     letter-spacing: 0.96px;
-    background: var(--logo-color);
+    background: $logo-color;
     margin-left: 492px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

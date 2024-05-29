@@ -13,7 +13,7 @@
     border-radius: 4px;
     border: none;
     padding: 6px 22px;
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -25,7 +25,7 @@
 }
 
 .pages-button:hover {
-    background: #2196f3;
-    color: #fff;
+    background: $logo-color;
+    color: $white-color;
     box-shadow: 0px 2px 2px 0px grey;
 }

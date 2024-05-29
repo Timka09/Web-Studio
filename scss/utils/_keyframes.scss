@@ -11,19 +11,19 @@ transform: translateY(0%);
   0%{
 
 transform:translateX(100%) ;
-color: var(--title-color);
+color: $title-color;
   }
   25%{
-color: var(--footer-color);
+color: $footer-color;
   }
   50%{
-color: var(--text-color);
+color: $text-color;
 font-size: 0px;
   }
   100%{
     transform: translateX(0%);
     font-size: 44px;
-    color: var(--article-color);
+    color: $article-color;
   }
 }
 
