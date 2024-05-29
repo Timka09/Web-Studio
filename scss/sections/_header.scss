@@ -1,16 +1,33 @@
 .first {
     padding-top: 24px;
     padding-bottom: 25px;
+}
 
-&__page {
-    color: $title-color;
+.first1 {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid grey;
+}
+
+.first-page {
+    color: var(--title-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    &::after {
+.first-item:nth-child(3){
+  animation-name: jumping-text;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.first-page:hover {
+    color: #2196f3;
+}
+
+.first-page::after {
     content: "";
     display: block;
     position: absolute;
@@ -20,100 +37,82 @@
     opacity: 0;
     margin-top: 28px;
     justify-content: center;
-    background-color: $logo-color;
+    background-color: var(--logo-color);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&:hover {
-    color: $logo-color;
-}
-
-&__item:hover>&::after {
+.first-item:hover>.first-page::after {
     opacity: 1;
 }
-}
 
-&__item{
-&:hover>&__page::after {
-    opacity: 1;
-}
-}
-
-&__link {
-    color: $text-color;
+.first-link {
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-    color: $logo-color;
 }
 
-&:hover+& {
-    fill: $logo-color;
-}
+.first-link:hover {
+    color: #2196f3;
 }
 
-&__logo {
+.first-logo {
     margin-right: 93px;
-    color: $logo-color;
+    color: var(--logo-color);
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
 }
 
-&__contacts {
+.first-contacts {
     font-size: 14px;
     font-weight: 500;
     display: flex;
 }
 
-&__contact {
+.first-contact {
     align-items: center;
     display: flex;
 }
 
-&__mail {
+.first-mail {
     margin-right: 50px;
     font-weight: 500;
-    color: $text-color;
+    color: var(--text-color);
     flex-direction: row-reverse;
 }
 
-&__tel {
+.first-tel {
     flex-direction: row-reverse;
 }
 
-&__wrap {
+.header-wrap {
     display: flex;
     justify-content: space-between;
 }
 
+.first-link:hover+.first-icons {
+    fill: var(--logo-color);
+}
 
-
-&__icons {
-    fill: $logo-color;
+.first-icons {
+    fill: var(--text-color);
     width: 16px;
     height: 16px;
     display: flex;
     margin-right: 10px;
-    
-    &__link:hover+& {
-    fill: $logo-color;
 }
+.first-span {
+    color: #212121;
 }
-&__span {
-    color: $title-color;
-}
-&__flex {
+.first-flex {
     display: flex;
     align-items: center;
 }
-&__list {
+.first-list {
     width: 281px;
     display: flex;
     justify-content: space-between;
-}
 }
