@@ -1,14 +1,6 @@
-.modal-title {
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    margin-bottom: 12px;
-}
+.modal{
 
-.backdrop {
+&__backdrop {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     position: fixed;
@@ -22,7 +14,21 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window {
+
+
+
+&__title {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+}
+
+
+&__window {
     border-radius: 4px;
     background: $white-color;
     flex-shrink: 0;
@@ -38,7 +44,7 @@
     height: 581px;
 }
 
-.backdrop.is-hidden .modal-window {
+&__backdrop.is-hidden &__window {
     transform: translate(0);
     transform: scale(0);
 }
@@ -53,7 +59,7 @@
     overflow: hidden;
 }
 
-.modal-close-button {
+&__closebutton {
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -68,14 +74,14 @@
     right: 8px;
 }
 
-.modal-list {
+&__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.modal-name {
+&__name {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -87,7 +93,7 @@
     gap: 4px;
 }
 
-.modal-input {
+&__input {
     width: 448px;
     height: 40px;
     border-radius: 4px;
@@ -97,18 +103,20 @@
 }
 
 
-.modal-icons {
+&__icons {
     position: absolute;
     top: 29px;
     left: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-icons:hover {
+    &:hover {
     fill: $logo-color;
 }
+}
 
-.modal-comment {
+
+
+&__comment {
     width: 448px;
     height: 120px;
     border-radius: 4px;
@@ -121,45 +129,49 @@
     letter-spacing: 0.12px;
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-
-.modal-coment::placeholder {
+    &::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
 }
+}
 
-.modal-label {
+
+
+
+&__label {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.modal-text {
+&__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
-.modal-link {
+&__link {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
     text-decoration-line: underline;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-link:hover {
+    &:hover {
     color: $logo-color;
 }
+}
 
-.modal-button {
+
+
+&__button {
     color: $white-color;
     font-size: 16px;
     font-weight: 700;
@@ -173,4 +185,5 @@
     margin-top: 40px;
     border-color: transparent;
     background-color: $blue-color;
+}
 }

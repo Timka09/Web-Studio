@@ -1,18 +1,18 @@
 .last {
     padding-top: 60px;
     padding-bottom: 60px;
-}
+    background: $footer-color;
 
-.last-container {
+&__container {
     display: flex;
     gap: 70px;
 }
 
-.last-item {
+&__item {
     margin-bottom: 10px;
 }
 
-.last-logo {
+&__logo {
     color: $logo-color;
     font-family: Raleway;
     font-size: 26px;
@@ -20,7 +20,7 @@
     letter-spacing: 0.78px;
 }
 
-.last-article {
+&__article {
     margin-bottom: 18px;
     margin-top: 20px;
     color: $article-color;
@@ -32,7 +32,7 @@
     width: 300px;
 }
 
-.last-link {
+&__link {
     color: $number-color;
     font-size: 14px;
     font-weight: 400;
@@ -41,7 +41,7 @@
     letter-spacing: 0.42px;
 }
 
-.last-text {
+&__text {
     color: $article-color;
     font-family: Roboto;
     font-size: 14px;
@@ -52,13 +52,13 @@
     padding-top: 10px;
 }
 
-.icons {
+&__iconsfooter {
     fill: $header-color;
     width: 20px;
     height: 20px;
 }
 
-.last-iconslink {
+&__iconslink {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 100%;
     width: 44px;
@@ -68,26 +68,28 @@
     align-items: center;
 }
 
-.last-icons {
+&__icons {
     border-radius: 100%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.last-icons:hover {
+    &:hover {
     background-color: $logo-color;
 }
+}
 
-.last-list {
+
+
+&__list {
     gap: 12px;
     display: flex;
 }
 
-.footer-form {
+&__form {
     padding-top: 12px;
     margin-left: 80px;
 }
 
-.footer-form-title {
+&__title {
     color: $white-color;
     font-size: 14px;
     font-style: normal;
@@ -98,12 +100,12 @@
     margin-bottom: 20px;
 }
 
-.footer-form-container {
+&__container {
     display: flex;
     gap: 12px;
 }
 
-.footer-form-input {
+&__input {
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(33, 150, 243, 0.01);
@@ -116,16 +118,18 @@
     line-height: 1.25;
     letter-spacing: 0.48px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-form-input::placeholder {
+    &::placeholder {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0.48px;
 }
+}
 
-.footer-form-button {
+
+
+&__button {
     color: $white-color;
     font-size: 16px;
     font-weight: 700;
@@ -144,14 +148,13 @@
     animation-iteration-count: infinite;
 }
 
-.footer-form-icon {
+&__icon {
     fill: $article-color;
     width: 24px;
     height: 24px;
 }
-.last {
-    background: $footer-color;
-}
-.last-span {
+&__span {
     color: $white-color;
+}
+
 }
