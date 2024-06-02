@@ -1,15 +1,14 @@
 .pages {
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
+  padding-top: 94px;
+  padding-bottom: 50px;
 
-.pages-list {
+  &__list {
     display: flex;
     justify-content: center;
     gap: 8px;
-}
+  }
 
-.pages-button {
+  &__button {
     border-radius: 4px;
     border: none;
     padding: 6px 22px;
@@ -21,11 +20,12 @@
     /* 162.5% */
     letter-spacing: 0.48px;
     transition: background-color, box-shadow,
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.pages-button:hover {
-    background: $logo-color;
-    color: $white-color;
-    box-shadow: 0px 2px 2px 0px grey;
+    &:hover {
+      background: $logo-color;
+      color: $discripton-color;
+      box-shadow: 0px 2px 2px 0px grey;
+    }
+  }
 }
