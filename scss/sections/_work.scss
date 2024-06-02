@@ -6,16 +6,12 @@
 &__name {
     color: $title-color;
     text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
+    @include text ($size:36px,$weight:700,$height:none,$spacing:1.08px,$transform:none);
     margin-bottom: 50px;
 }
 
 &__decorate>&__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centering;
     position: absolute;
     width: 370px;
     height: 70px;
@@ -23,7 +19,6 @@
     background: rgba(47, 48, 58, 0.8);
     color: #eee;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
 }

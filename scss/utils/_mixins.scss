@@ -1,0 +1,13 @@
+@mixin animations($name, $duration, $count, $delay) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $count;
+  animation-delay: $delay;
+}
+@mixin text($size, $weight, $height, $spacing, $transform) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-transform: $transform;
+}

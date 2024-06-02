@@ -1,3 +1,9 @@
+.last__iconslink, .goods__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: Roboto;
 }
@@ -52,9 +58,6 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transform: translate(0, 300px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -63,12 +66,11 @@ a {
 }
 .goods__discription {
   color: #fff;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  /* 155.556% */
   letter-spacing: 0.54px;
+  text-transform: none;
   width: 322px;
 }
 .goods__overlay {
@@ -92,8 +94,8 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 2.2;
-  /* 200% */
   letter-spacing: 1.08px;
+  text-transform: none;
 }
 .goods__text {
   padding-bottom: 20px;
@@ -102,8 +104,8 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8;
-  /* 187.5% */
   letter-spacing: 0.48px;
+  text-transform: none;
 }
 .goods__photo {
   width: 100%;
@@ -129,8 +131,8 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  /* 162.5% */
   letter-spacing: 0.48px;
+  text-transform: none;
   transition: background-color, box-shadow, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pages__button:hover {
@@ -156,7 +158,9 @@ a {
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  line-height: none;
   letter-spacing: 0.78px;
+  text-transform: none;
 }
 .last__article {
   margin-bottom: 18px;
@@ -165,8 +169,8 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
-  /* 171.429% */
   letter-spacing: 0.42px;
+  text-transform: none;
   width: 300px;
 }
 .last__link {
@@ -174,14 +178,14 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
-  /* 171.429% */
   letter-spacing: 0.42px;
+  text-transform: none;
 }
 .last__text {
   color: #fff;
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
+  line-height: none;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -197,9 +201,6 @@ a {
   border-radius: 100%;
   width: 44px;
   height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .last__icons {
   border-radius: 100%;
@@ -219,9 +220,8 @@ a {
 .last__title {
   color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: none;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -242,6 +242,7 @@ a {
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.48px;
+  text-transform: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .last__input::-moz-placeholder {
@@ -249,12 +250,14 @@ a {
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.48px;
+  text-transform: none;
 }
 .last__input::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.48px;
+  text-transform: none;
 }
 .last__button {
   color: #fff;
@@ -262,6 +265,7 @@ a {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
+  text-transform: none;
   padding: 10px 28px;
   background-color: #188ce8;
   display: flex;
@@ -273,6 +277,7 @@ a {
   animation-name: rotating-button;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 .last__icon {
   fill: #fff;
@@ -291,7 +296,9 @@ a {
   color: #212121;
   font-size: 14px;
   font-weight: 500;
+  line-height: none;
   letter-spacing: 0.28px;
+  text-transform: none;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -318,6 +325,7 @@ a {
   animation-name: jumping-text;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 .first__item__item:hover > .first__item__page::after {
   opacity: 1;
@@ -326,7 +334,9 @@ a {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
+  line-height: none;
   letter-spacing: 0.28px;
+  text-transform: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first__link:hover {
@@ -341,11 +351,16 @@ a {
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  line-height: none;
   letter-spacing: 0.78px;
+  text-transform: none;
 }
 .first__contacts {
   font-size: 14px;
   font-weight: 500;
+  line-height: none;
+  letter-spacing: none;
+  text-transform: none;
   display: flex;
 }
 .first__contact {
