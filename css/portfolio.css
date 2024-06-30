@@ -9,9 +9,28 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .grid-list {
@@ -361,7 +380,14 @@ a {
   line-height: none;
   letter-spacing: none;
   text-transform: none;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .first__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 96px;
+  }
 }
 .first__contact {
   align-items: center;
@@ -399,8 +425,31 @@ a {
 }
 .first__list {
   width: 281px;
-  display: flex;
+  display: none;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .first__list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .first__list {
+    display: flex;
+  }
+}
+.first__button {
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .first__button {
+    display: none;
+  }
+}
+.first__menu {
+  fill: black;
+  width: 40px;
+  height: 40px;
 }
 
 @keyframes jumping-text {
@@ -425,8 +474,11 @@ a {
   }
   100% {
     transform: translateX(0%);
-    font-size: 44px;
+    font-size: 26px;
     color: #fff;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+    }
   }
 }
 @keyframes growing-box {

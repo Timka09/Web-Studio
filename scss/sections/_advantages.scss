@@ -3,46 +3,27 @@
 
 &__item {
     margin-left: 30px;
+}
 
-    &:first-child:before {
-    margin-bottom: 30px;
-    content: "" url(../photo/Satellite.webp);
+&__icon {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+&__box{
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-&:nth-child(2):before {
+    height: 120px;
     margin-bottom: 30px;
-    content: "" url(../photo/Clock.webp);
-    display: flex;
-    justify-content: center;
+    border-radius: 4px;
+    background-color: $team-color;
 }
-
-&:nth-child(3):before {
-    margin-bottom: 30px;
-    content: "" url(../photo/Computer.webp);
-    display: flex;
-    justify-content: center;
-}
-
-&:nth-child(4):before {
-    margin-bottom: 30px;
-    content: "" url(../photo/SpaceMan.webp);
-    display: flex;
-    justify-content: center;
-}
-}
-
-
 
 &__name {
     margin-bottom: 10px;
     color: $title-color;
     @include text ($size:14px,$weight:700,$height:none,$spacing:0.42px,$transform:uppercase);
-
-    @media screen and (min-width:768px) {
-        
-    }
 }
 
 &__article {
@@ -51,12 +32,15 @@
 }
 &__list {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    gap: 30px;
 
 
-    @media screen and (max-width:768px) {
-    flex-wrap: wrap;
+  @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
     }
 }   
 }

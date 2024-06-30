@@ -3,25 +3,32 @@ body {
 }
 
 .container {
-    max-width: 480px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 
+
+@media screen and (min-width:320px) {
+        width: 100%;
+}
+
+@media screen and (min-width:480px)  {
+   width: 480px; 
+}
 @media screen and (min-width: 768px) {
-    max-width: 768px;
+    width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
   }
+
 }
 .grid-list {
     display: flex;
     justify-content: center;
-    gap: $grid-gap;
+    gap: 30px;
 }
 
 .grid-item {
-    width: calc((100% - $grid-gap * $goods) / $goods);
+    width: calc((100% - 30px * 3) / 3);
 }
