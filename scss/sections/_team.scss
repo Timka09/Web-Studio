@@ -68,10 +68,26 @@
     }
   }
   &__photo {
+  width: 450px;
+
+    @media screen and (min-width:768px) {
+      width: 354px;
+    }
+     @media screen and (min-width:1200px) {
     width: 270px;
+    }
   }
   &__list {
+
+
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+     @media screen and (min-width:1200px) {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    }
   }
 }

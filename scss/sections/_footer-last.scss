@@ -10,12 +10,22 @@
 
 &__item {
     margin-bottom: 10px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 &__logo {
     color: $logo-color;
     font-family: Raleway;
     @include text ($size:26px,$weight:700,$height:none,$spacing:0.78px,$transform:none);
+    
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 &__article {
@@ -24,6 +34,11 @@
     color: $article-color;
     @include text ($size:14px,$weight:400,$height:1.7,$spacing:0.42px,$transform:none);
     width: 300px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 &__link {
@@ -36,6 +51,11 @@
     @include text ($size:14px,$weight:700,$height:none,$spacing:0.42px,$transform:uppercase);
     margin-bottom: 32px;
     padding-top: 10px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 &__iconsfooter {
@@ -66,22 +86,43 @@
 &__list {
     gap: 12px;
     display: flex;
+
+     @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 &__form {
     padding-top: 12px;
     margin-left: 80px;
+
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 &__title {
     color: $discripton-color;
     @include text ($size:14px,$weight:700,$height:none,$spacing:0.42px,$transform:uppercase);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 &__container {
     display: flex;
     gap: 12px;
+
+      @media screen and (max-width: 1199px) {
+      flex-direction: column;
+    }
+
+    
 }
 
 &__input {
@@ -98,6 +139,20 @@
     &::placeholder {
     @include text ($size:16px,$weight:400,$height:1.25,$spacing:0.48px,$transform:none);
 }
+
+@media screen and (max-width: 479px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    @media screen and (min-width: 480px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
 }
 
 
@@ -114,6 +169,11 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     @include animations ($name: rotating-button, $duration:3s, $count:infinite,$delay:0s);
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 &__icon {
@@ -124,5 +184,24 @@
 &__span {
     color: $discripton-color;
 }
+&__div{
+     @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+&__info{
 
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+    }
+
+     @media screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
 }

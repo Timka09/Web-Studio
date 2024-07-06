@@ -1,6 +1,8 @@
 .advantages {
     padding-top: 94px;
 
+    
+
 &__item {
     margin-left: 30px;
 }
@@ -33,14 +35,20 @@
 &__list {
     display: flex;
     gap: 30px;
+    flex-direction: column;
 
 
-  @media screen and (max-width: 1199px) {
-      flex-wrap: wrap;
-    }
+    @media screen and (min-width:1200px) {
+    flex-direction: row;
 
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
     }
 }   
+
+&__square{
+display: block;
+
+@media screen and (min-width:768px) {
+    display: flex;
+}
+}
 }
