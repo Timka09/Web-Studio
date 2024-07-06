@@ -486,7 +486,6 @@ a {
   }
   100% {
     transform: translateX(0%);
-    font-size: 26px;
     color: #fff;
     @media screen and (min-width: 1200px) {
       font-size: 44px;

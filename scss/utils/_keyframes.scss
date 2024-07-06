@@ -9,7 +9,6 @@ transform: translateY(0%);
 
 @keyframes run-text{
   0%{
-
 transform:translateX(100%) ;
 color: $title-color;
   }
@@ -22,12 +21,11 @@ font-size: 0px;
   }
   100%{
     transform: translateX(0%);
-    font-size: 26px;
     color: $article-color;
 
     @media screen and (min-width:1200px){
       font-size: 44px;
-    }
+    }   
   }
 }
 
