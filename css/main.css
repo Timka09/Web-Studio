@@ -209,12 +209,6 @@ body {
 .last__item {
   margin-bottom: 10px;
 }
-@media screen and (max-width: 1199px) {
-  .last__item {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .last__logo {
   color: #2196f3;
   font-family: Raleway;
@@ -223,12 +217,6 @@ body {
   line-height: none;
   letter-spacing: 0.78px;
   text-transform: none;
-}
-@media screen and (max-width: 1199px) {
-  .last__logo {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 .last__article {
   margin-bottom: 18px;
@@ -240,12 +228,6 @@ body {
   letter-spacing: 0.42px;
   text-transform: none;
   width: 300px;
-}
-@media screen and (max-width: 1199px) {
-  .last__article {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 .last__link {
   color: rgba(255, 255, 255, 0.6);
@@ -264,12 +246,6 @@ body {
   text-transform: uppercase;
   margin-bottom: 32px;
   padding-top: 10px;
-}
-@media screen and (max-width: 1199px) {
-  .last__text {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 .last__iconsfooter {
   fill: #ffffff;
@@ -293,21 +269,9 @@ body {
   gap: 12px;
   display: flex;
 }
-@media screen and (max-width: 1199px) {
-  .last__list {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .last__form {
   padding-top: 12px;
   margin-left: 80px;
-}
-@media screen and (max-width: 1199px) {
-  .last__form {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .last__title {
   color: #fff;
@@ -318,20 +282,9 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1199px) {
-  .last__title {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .last__container {
   display: flex;
   gap: 12px;
-}
-@media screen and (max-width: 1199px) {
-  .last__container {
-    flex-direction: column;
-  }
 }
 .last__input {
   border-radius: 4px;
@@ -362,25 +315,6 @@ body {
   letter-spacing: 0.48px;
   text-transform: none;
 }
-@media screen and (max-width: 479px) {
-  .last__input {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 480px) {
-  .last__input {
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .last__input {
-    width: 358px;
-  }
-}
 .last__button {
   color: #fff;
   font-size: 16px;
@@ -401,12 +335,6 @@ body {
   animation-iteration-count: infinite;
   animation-delay: 0s;
 }
-@media screen and (max-width: 1199px) {
-  .last__button {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .last__icon {
   fill: #fff;
   width: 24px;
@@ -414,28 +342,6 @@ body {
 }
 .last__span {
   color: #fff;
-}
-@media screen and (max-width: 767px) {
-  .last__div {
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .last__div {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .last__info {
-    gap: 70px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .last__info {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .first {
