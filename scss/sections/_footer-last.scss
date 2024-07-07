@@ -1,126 +1,218 @@
-.last {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: $footer-color;
+.last{
+  background-color: $footer-color;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-&__container {
+  &__flex {
     display: flex;
-    gap: 70px;
-}
 
-&__item {
-    margin-bottom: 10px;
-}
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 60px;
+    }
 
-&__logo {
-    color: $logo-color;
-    font-family: Raleway;
-    @include text ($size:26px,$weight:700,$height:none,$spacing:0.78px,$transform:none);
-}
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      gap: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 93px;
+    }
+  }
 
-&__article {
-    margin-bottom: 18px;
+  &__box {
+    width: 232px;
+    @media screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__table {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+    }
+  }
+
+  &__address {
+    color: $article-color;
     margin-top: 20px;
-    color: $article-color;
     @include text ($size:14px,$weight:400,$height:1.7,$spacing:0.42px,$transform:none);
-    width: 300px;
-}
+    width: 207px;
 
-&__link {
-    color: $number-color;
-    @include text ($size:14px,$weight:400,$height:1.7,$spacing:0.42px,$transform:none);
-}
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__link {
+    color: $icons-color;
+    margin-top: 9px;
+    @include text ($size:14px,$weight:500,$height:1.71,$spacing:0.28px,$transform:none);
+    width: 134px;
+  }
+  &__link:hover {
+    color: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__subitem {
+    width: 135px;
 
-&__text {
-    color: $article-color;
-    @include text ($size:14px,$weight:700,$height:none,$spacing:0.42px,$transform:uppercase);
-    margin-bottom: 32px;
-    padding-top: 10px;
-}
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__logo {
+    color: $logo-color;
+    margin-right: 93px;
+    @include text ($size:26px,$weight:700,$height:none,$spacing:0.78px,$transform:none);
+    font-family: Raleway;
+    display: block;
+    width: 154px;
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__studio {
+    color: $discripton-color;
+  }
+  &__subbox {
+    margin-top: 5px;
 
-&__iconsfooter {
-    fill: $header-color;
-    width: 20px;
-    height: 20px;
-}
-
-&__iconslink {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 100%;
-    width: 44px;
-    height: 44px;
-    @extend %centering;
-}
-
-&__icons {
-    border-radius: 100%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover {
-    background-color: $logo-color;
-}
-}
-
-&__list {
-    gap: 12px;
-    display: flex;
-}
-
-&__form {
-    padding-top: 12px;
-    margin-left: 80px;
-} 
-
-&__title {
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__subtext {
     color: $discripton-color;
     @include text ($size:14px,$weight:700,$height:none,$spacing:0.42px,$transform:uppercase);
     margin-bottom: 20px;
-}
+    width: 115px;
 
-&__container {
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__iconlist {
+    display: flex;
+    gap: 10px;
+    width: 206px;
+
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__iconitem {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &__sublink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
+  &__icons {
+    fill: $discripton-color;
+    width: 20px;
+    height: 20px;
+  }
+  &__iconitem:hover {
+    background-color: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__form {
+    padding-top: 12px;
+
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__subtitle {
+    color: $discripton-color;
+    @include text ($size:14px,$weight:700,$height:none,$spacing:0.42px,$transform:uppercase);
+    margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__subcontainer {
     display: flex;
     gap: 12px;
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+    }
+  }
 
-}
-
-&__input {
+  &__subinput {
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(33, 150, 243, 0.01);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 15px 16px;
-    width: 358px;
     color: $discripton-color;
     @include text ($size:16px,$weight:400,$height:1.25,$spacing:0.48px,$transform:none);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &::placeholder {
+    @media screen and (max-width: 479px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    @media screen and (min-width: 480px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+  }
+  &__subinput:focus {
+    outline: none;
+    border: 1px solid $logo-color;
+  }
+  &__subinput::placeholder {
+    color: $icons-color;
     @include text ($size:16px,$weight:400,$height:1.25,$spacing:0.48px,$transform:none);
-}
-
-}
-
-&__button {
+  }
+  &__subbutton {
     color: $discripton-color;
-    @include text ($size:16px,$weight:700,$height:1.87,$spacing:0.96px,$transform:none);
+    @include text ($size:18px,$weight:700,$height:1.87,$spacing:0.54px,$transform:none);
     padding: 10px 28px;
-    background-color: $background-color;
+    background-color: $logo-color;
     display: flex;
+    width: 200px;
     gap: 10px;
     align-items: center;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     @include animations ($name: rotating-button, $duration:3s, $count:infinite,$delay:0s);
+    @media screen and (max-width: 1199px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
-
-}
-&__icon {
-    fill: $article-color;
-    width: 24px;
-    height: 24px;
-}
-
-&__span {
-    color: $discripton-color;
-}
+  &__subicon {
+    fill: $discripton-color;
+  }
 }
