@@ -66,7 +66,7 @@
             </svg>
           </li>
         </ul>
-        <button class="first__button">
+        <button class="first__button js-open-menu" type="button">
           <svg class="first__menu">
             <use href="./photo/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -523,7 +523,52 @@
       </div>
     </div>
     </div>
+    <div class="mobil">
+      <div class="mobil__backdrop js-menu-container">
+        <div class="mobil__window is-open">
+          <button class="mobil__button js-close-menu" type="button">
+          <svg class="mobil__icon">
+            <use href="./photo/symbol-defs.svg#icon-closeblack"></use>
+          </svg>
+          </button>
+         <ul class="mobil__nav">
+          <li class="mobil__item">
+            <a class="mobil__link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobil__item">
+            <a class="mobil__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobil__item">
+            <a class="mobil__link" href="#">Контакти</a>
+          </li>
+         </ul>
+         <ul class="mobil__contacts">
+          <li class="mobil__iteminfo">
+            <a class="mobil__number" href="tel:+380961111111">380961111111</a>
+          </li>
+          <li class="mobil__iteminfo">
+            <a class="mobil__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+         </ul>
+         <ul class="mobil__social">
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://twitter.com/?lang=uk">Twitter</a>
+          </li>
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://linkedin.com/">Linkedin</a>
+          </li>
+         </ul>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/index.js"></script>
+    <script src="./js/mobil.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
   <script>

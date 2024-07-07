@@ -1,0 +1,91 @@
+.mobil{
+
+
+.js-menu-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+&__js-menu-container.is-open{
+    transform: translateX(0);
+}
+
+&__window{
+     margin-left: 40px;
+     margin-right: 15px;
+}
+
+&__icon{
+    width: 40px;
+    height: 40px;
+    padding-top:10px ;
+    display: flex;
+    margin-left: auto;
+
+    &:hover{
+    fill: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+&__button{
+    border: none;
+    display: flex;
+    margin-left: auto;
+}
+
+&__item{
+    margin-bottom: 32px;
+}
+
+&__link{
+color: $title-color;
+@include text ($size:40px,$weight:500,$height:none,$spacing:0.8px,$transform:none);
+
+&:hover{
+color: $logo-color;
+transition: text 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+&__contacts{
+    padding-top: 274px;
+}
+
+&__iteminfo{
+margin-bottom: 32px;
+}
+
+&__number{
+color: $logo-color;
+@include text ($size:34px,$weight:500,$height:none,$spacing:0.68px,$transform:none);
+}
+
+&__email{
+color: $text-color;
+@include text ($size:24px,$weight:500,$height:none,$spacing:0.48px,$transform:none);
+}
+
+&__sociallink{
+color: $logo-color;
+@include text ($size:18px,$weight:500,$height:22px,$spacing:0.36px,$transform:none);
+}
+
+&__social{
+    display: flex;
+    gap: 20px;
+}
+&__itemsocial{
+    margin-top: 32px;
+}
+
+}
