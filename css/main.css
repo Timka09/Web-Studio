@@ -166,8 +166,14 @@ body {
 }
 
 .clients {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .clients__list {
   display: flex;
@@ -225,12 +231,22 @@ body {
 .clients__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: none;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.84px;
   text-transform: none;
-  margin-bottom: 66px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: none;
+    letter-spacing: 1.08px;
+    text-transform: none;
+    margin-bottom: 50px;
+  }
 }
 .clients__icons {
   fill: #afb1b8;
@@ -678,8 +694,14 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../photo/Img.webp);
   background-repeat: no-repeat;
   background-position: center, center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__text {
   margin-right: auto;
@@ -976,14 +998,20 @@ body {
 }
 
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .team__item {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  padding-bottom: 30px;
 }
 .team__photo {
   margin-bottom: 30px;
@@ -991,12 +1019,21 @@ body {
 .team__name {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: none;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.84px;
   text-transform: none;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: none;
+    letter-spacing: 1.08px;
+    text-transform: none;
+  }
 }
 .team__nick {
   margin-bottom: 10px;
@@ -1029,7 +1066,6 @@ body {
 }
 .team__iconslist {
   gap: 10px;
-  margin-bottom: 30px;
 }
 .team__link {
   width: 44px;
@@ -1056,17 +1092,10 @@ body {
     width: 270px;
   }
 }
-@media screen and (min-width: 768px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__list {
-    display: flex;
-    gap: 30px;
-  }
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .work {

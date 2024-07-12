@@ -1,13 +1,18 @@
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
   background-color: $team-color;
+
+  @media screen and (min-width:1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 
   &__item {
     border-radius: 0px 0px 4px 4px;
     background-color: $header-color;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding-bottom: 30px;
   }
 
   &__photo {
@@ -17,8 +22,12 @@
   &__name {
     color: $title-color;
     text-align: center;
-    @include text ($size:36px,$weight:700,$height:none,$spacing:1.08px,$transform:none);
+    @include text ($size:28px,$weight:700,$height:none,$spacing:0.84px,$transform:none);
     margin-bottom: 50px;
+
+    @media screen and (min-width:1200px) {
+    @include text ($size:36px,$weight:700,$height:none,$spacing:1.08px,$transform:none);
+    }
   }
 
   &__nick {
@@ -49,7 +58,6 @@
   &__iconslist {
     @extend %centering;
     gap: 10px;
-    margin-bottom: 30px;
   }
 
   &__link {
@@ -78,16 +86,8 @@
     }
   }
   &__list {
-
-
-    @media screen and (min-width:768px) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-     @media screen and (min-width:1200px) {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    }
   }
 }
