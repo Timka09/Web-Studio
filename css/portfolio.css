@@ -65,7 +65,12 @@ img {
 }
 
 .goods {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .goods {
+    padding-bottom: 94px;
+  }
 }
 .goods__item {
   outline: 1px solid #fff;
@@ -113,18 +118,18 @@ img {
 @media screen and (min-width: 768px) {
   .goods__list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
   .goods__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 .goods__name {
-  width: 400px;
   padding-bottom: 10px;
   padding-top: 20px;
   padding-left: 24px;
@@ -145,15 +150,16 @@ img {
   letter-spacing: 0.48px;
   text-transform: none;
 }
-.goods__photo {
-  width: 100%;
-  display: block;
-  max-width: 100%;
-}
 
 .pages {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .pages {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 .pages__list {
   display: flex;

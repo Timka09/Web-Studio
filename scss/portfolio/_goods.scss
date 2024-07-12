@@ -1,5 +1,9 @@
 .goods {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+    padding-bottom: 94px; 
+    }
 
 &__item {
     $goods: 3;
@@ -54,19 +58,19 @@
 
     @media screen and (min-width:768px) {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     @media screen and (min-width:1200px) {
     $grid-gap: 30px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     }
 }
 
 &__name {
-    width: 400px;
     padding-bottom: 10px;
     padding-top: 20px;
     padding-left: 24px;
@@ -80,11 +84,4 @@
     color: $text-color;
     @include text ($size:16px,$weight:400,$height:1.8,$spacing:0.48px,$transform:none);
 }
-
-&__photo {
-    width: 100%;
-    display: block;
-    max-width: 100%;
-}
-
 }
