@@ -65,7 +65,7 @@
             </svg>
           </li>
         </ul>
-        <button class="first__button">
+        <button class="first__button" data-mobile-open type="button">
           <svg class="first__menu">
             <use href="./photo/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -102,11 +102,24 @@
             <li class="goods__item grid-item">
               <div data-aos="flip-up">
               <div class="goods__overlay">
-                <img
-                  class="goods__photo"
-                  src="./photo/poster1.webp"
-                  alt="ноутбук з людьми"
-                />
+                <picture>
+                  <source
+                    srcset="./photo/desktop/site-work1desktop-1x.webp 1x, ./photo/desktop/site-work1desktop-2x.webp 2x"
+                    type="photo/webp"
+                    media=" (min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./photo/tablet/site-work1tablet-1x.webp 1x, ./photo/tablet/site-work1tablet-2x.webp 2x"
+                    type="photo/webp"
+                    media=" (min-width: 768px)"
+                  />
+                  <source
+                    srcset="./photo/phone/site-work1phone-1x.webp 1x, ./photo/phone/site-work1phone-2x.webp 2x"
+                    type="photo/webp"
+                    media=" (min-width: 320px)"
+                  />
+                  <img class="goods__photo" src="./photo/poster1.webp" alt="poster1" />
+                </picture>
                 <div class="goods__box">
                   <h2 class="goods__discription">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -123,11 +136,24 @@
             <li class="goods__item grid-item">
               <div data-aos="flip-up">
               <div class="goods__overlay">
-                <img
-                  class="goods__photo"
-                  src="./photo/poster2.webp"
-                  alt="баскетболісти"
-                />
+                <picture>
+                  <source
+                    srcset="./photo/desktop/site-work2desktop-1x.webp 1x, ./photo/desktop/site-work2desktop-2x.webp 2x"
+                    type="photo/webp"
+                    media=" (min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./photo/tablet/site-work2tablet-1x.webp 1x, ./photo/tablet/site-work2tablet-2x.webp 2x"
+                    type="photo/webp"
+                    media=" (min-width: 768px)"
+                  />
+                  <source
+                    srcset="./photo/phone/site-work2phone-1x.webp 1x, ./photo/phone/site-work2phone-2x.webp 2x"
+                    type="photo/webp"
+                    media=" (min-width: 320px)"
+                  />
+                  <img class="goods__photo" src="./photo/poster2.webp" alt="poster2" />
+                </picture>
                 <div class="goods__box">
                   <h2 class="goods__discription">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -355,7 +381,53 @@
           </div>
         </div>
     </footer>
+    <!-- mobil -->
+    <div class="mobil">
+      <div class="mobil__backdrop is-hidden" data-mobile>
+        <div class="mobil__window">
+          <button class="mobil__button" type="button" data-mobile-close>
+          <svg class="mobil__icon">
+            <use href="./photo/symbol-defs.svg#icon-closeblack"></use>
+          </svg>
+          </button>
+         <ul class="mobil__nav">
+          <li class="mobil__item">
+            <a class="mobil__link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobil__item">
+            <a class="mobil__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobil__item">
+            <a class="mobil__link" href="#">Контакти</a>
+          </li>
+         </ul>
+         <ul class="mobil__contacts">
+          <li class="mobil__iteminfo">
+            <a class="mobil__number" href="tel:+380961111111">380961111111</a>
+          </li>
+          <li class="mobil__iteminfo">
+            <a class="mobil__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+         </ul>
+         <ul class="mobil__social">
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://twitter.com/?lang=uk">Twitter</a>
+          </li>
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="mobil__itemsocial">
+            <a class="mobil__sociallink" href="https://linkedin.com/">Linkedin</a>
+          </li>
+         </ul>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/mobil.js"></script>
   </body>
   <script>
   AOS.init();

@@ -673,7 +673,7 @@ body {
   .first__contacts {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 96px;
+    padding-left: 96px;
   }
 }
 .first__contact {
