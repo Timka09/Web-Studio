@@ -1,33 +1,62 @@
 .mobil{
 
 
-.js-menu-container{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
-  z-index: 999;
-
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+@media screen and (min-width:768px) {
+    display: none;
+}
+@media screen and (min-width:1200px) {
+    display: none;
 }
 
-&__js-menu-container.is-open{
-    transform: translateX(0);
+&__backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 &__window{
-     margin-left: 40px;
-     margin-right: 15px;
+    border-radius: 4px;
+    background: #fff;
+    flex-shrink: 0;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    width: 480px;
+    height: auto;
+}
+
+&__backdrop.is-hidden &__window {
+  transform: translate(0);
+  transform: scale(0);
+}
+
+.is-hidden{
+opacity: 0;
+pointer-events: none;
+visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 &__icon{
     width: 40px;
     height: 40px;
-    padding-top:10px ;
+    padding-top:10px;
+    padding-right: 15px;
     display: flex;
     margin-left: auto;
 

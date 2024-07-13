@@ -9,8 +9,16 @@
 
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 8px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+      justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+      justify-content: center;
+    }
   }
 
   &__button {

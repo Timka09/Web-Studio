@@ -66,7 +66,7 @@
             </svg>
           </li>
         </ul>
-        <button class="first__button js-open-menu" type="button">
+        <button class="first__button" data-mobile-open type="button">
           <svg class="first__menu">
             <use href="./photo/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -524,9 +524,9 @@
     </div>
     </div>
     <div class="mobil">
-      <div class="mobil__backdrop js-menu-container">
-        <div class="mobil__window is-open">
-          <button class="mobil__button js-close-menu" type="button">
+      <div class="mobil__backdrop is-hidden" data-mobile>
+        <div class="mobil__window">
+          <button class="mobil__button" type="button" data-mobile-close>
           <svg class="mobil__icon">
             <use href="./photo/symbol-defs.svg#icon-closeblack"></use>
           </svg>
@@ -568,7 +568,7 @@
       </div>
     </div>
     <script type="module" src="./js/index.js"></script>
-    <script src="./js/mobil.js"></script>
+    <script type="module" src="./js/mobil.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
   <script>

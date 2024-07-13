@@ -9,14 +9,43 @@
     $goods: 3;
     outline: 1px solid $discripton-color;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 400px;
+    height: 400px;
+
+     @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 440px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 404px;
+  }
 
     &:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12); 
 }
+
+overflow: hidden;
 }
 
 
+&__photo{
+    width: 450px;
+height: 294px;
+flex-shrink: 0;
+
+@media screen and (min-width:768px) {
+    width: 354px;
+height: 294px;
+flex-shrink: 0;
+}
+@media screen and (min-width:1200px) {
+   width: 370px;
+height: 294px;
+flex-shrink: 0; 
+}
+}
 
 
 &__box {
@@ -53,21 +82,16 @@
 
 &__list {
  display: flex;
+ flex-wrap: wrap;
+ gap: 30px;
  justify-content: center;
- flex-direction: column;
 
-    @media screen and (min-width:768px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    @media screen and (min-width:1200px) {
-    $grid-gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    }
+ @media screen and (min-width:768px) {
+    justify-content: start;
+ }
+  @media screen and (min-width:768px) {
+    justify-content: none;
+ }
 }
 
 &__name {
