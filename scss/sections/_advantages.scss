@@ -1,10 +1,7 @@
 .advantages{
   background-color: $discripton-color;
-
-  @media screen and (min-width: 320px) {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -58,7 +55,7 @@
 
   &__text {
     color: $icons-color;
-    @include text ($size:14px,$weight:500,$height:none,$spacing:0.28px,$transform:none);
+    @include text ($size:14px,$weight:400,$height:24px,$spacing:0.42px,$transform:none);
 
     @media screen and (max-width: 767px) {
       max-width: 450px;

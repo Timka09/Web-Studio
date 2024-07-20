@@ -34,6 +34,7 @@
     @media screen and (min-width: 768px) {
       display: flex;
       gap: 165px;
+      justify-content: center;
     }
     @media screen and (min-width: 1200px) {
       gap: 70px;
@@ -89,10 +90,6 @@
 
     @media screen and (max-width: 767px) {
       margin-top: 60px;
-    }
-    @media screen and (max-width: 1199px) {
-      margin-left: auto;
-      margin-right: auto;
     }
   }
   &__subtext {

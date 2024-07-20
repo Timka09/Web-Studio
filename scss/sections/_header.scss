@@ -1,6 +1,7 @@
 .first {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: solid grey 1px;
 
   &__page {
     color: $title-color;
@@ -54,6 +55,7 @@
   }
   &__logo {
     margin-right: 93px;
+    margin-top: 8px;
     color: $logo-color;
     font-family: Raleway;
     @include text ($size:26px,$weight:700,$height:none,$spacing:0.78px,$transform:none);
@@ -65,8 +67,14 @@
 
     @media screen and (min-width:768px ){
       display: flex;
-      flex-wrap: wrap;
-      margin-left: 96px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media screen and (min-width:1200px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-top: 7px;
     }  
   }
 
@@ -76,7 +84,6 @@
   }
 
   &__mail {
-    margin-right: 50px;
     font-weight: 500;
     color: $text-color;
     flex-direction: row-reverse;
@@ -131,7 +138,6 @@ display: none;
   
 }
 &__menu{
-fill: black;
 width: 40px;
 height: 40px;
 }
