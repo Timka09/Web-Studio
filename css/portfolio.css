@@ -198,7 +198,7 @@ button {
     justify-content: start;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .goods__list {
     justify-content: none;
   }
@@ -812,6 +812,7 @@ button {
 }
 .first__button {
   border: none;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .first__button {
